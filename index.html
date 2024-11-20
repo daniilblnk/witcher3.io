@@ -42,13 +42,13 @@
 
     // Update this URL to match your GitHub Pages URL
     layer = L.tileLayer('https://daniilblnk.github.io/witcher3.io/{z}/{x}/{y}.png', {
-      minZoom: mapMinZoom,
-      maxZoom: mapMaxZoom,
-      tileSize: L.point(512, 512),
-      attribution: '<a href="https://www.maptiler.com/engine/">Rendered with MapTiler Engine</a>',
-      noWrap: true,
-      tms: false
-    }).addTo(map);
+  minZoom: mapMinZoom,
+  maxZoom: mapMaxZoom,
+  tileSize: L.point(512, 512),
+  attribution: '<a href="https://www.maptiler.com/engine/">Rendered with MapTiler Engine</a>',
+  noWrap: true,
+  tms: false
+}).addTo(map);
 
     map.fitBounds([
       crs.unproject(L.point(mapExtent[2], mapExtent[3])),
