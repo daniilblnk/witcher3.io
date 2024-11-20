@@ -39,7 +39,7 @@
           crs: crs
         });
         
-        layer = L.tileLayer('{z}/{x}/{y}.png', {
+        layer = L.tileLayer('./{z}/{x}/{y}.png', { ... });
           minZoom: mapMinZoom, maxZoom: mapMaxZoom,
           tileSize: L.point(512, 512),
           attribution: '<a href="https://www.maptiler.com/engine/">Rendered with MapTiler Engine</a>',
