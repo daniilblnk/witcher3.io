@@ -54,6 +54,10 @@
           attribution: '<a href="https://www.maptiler.com/engine/">Rendered with MapTiler Engine</a>',
           noWrap: true,    // Prevent tiling from wrapping
           tms: false       // Ensure it doesn't use TMS tiling scheme
+        bounds: [
+    [-90, -180],
+    [90, 180]
+  ]
       }).addTo(map);
 
       // Fit map bounds to the extent
